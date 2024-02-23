@@ -7,7 +7,7 @@
         <title>Password Generator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/Password-Generator/style.css">
     </head>
     <body>
         <div class="container">
@@ -16,9 +16,13 @@
                 <input type="text" id="password" placeholder="Password">
                 <img onclick="copyPassword()"  src="images/copy.png" >
             </div>
-            <button onclick="createPasswordLength8()"><img src="images/pencil.png">Generate Password of Length 8</button><br/>
-            <button onclick="createPasswordL2()"><img src="images/pencil.png">Generate Password of Length 12</button><br/>
-            <button onclick="createPasswordL3()"><img src="images/pencil.png">Generate Password of Length 16</button>
+            <div class="lengthSelector">
+             <input type="number" id="lengthInput" placeholder="Enter Password Length">
+            </div>
+            
+            <button onclick="createPasswordLength8()"><img src="images/pencil.png">Generate Password</button><br/>
+            <!-- <button onclick="createPasswordL2()"><img src="images/pencil.png">Generate Password of Length 12</button><br/>
+            <button onclick="createPasswordL3()"><img src="images/pencil.png">Generate Password of Length 16</button> -->
         </div>
         
         <script src="script.js" async defer></script>
